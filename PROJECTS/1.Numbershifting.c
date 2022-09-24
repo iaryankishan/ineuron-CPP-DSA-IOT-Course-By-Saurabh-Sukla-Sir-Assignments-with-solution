@@ -278,7 +278,7 @@ int main()
  if((check!='y') && (check != 'Y'))
     break;
 
- //chance=5;
+ chance=5;
 }
 return 0;
 }
