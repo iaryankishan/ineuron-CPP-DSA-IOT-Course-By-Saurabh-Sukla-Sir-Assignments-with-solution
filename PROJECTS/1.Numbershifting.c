@@ -49,11 +49,11 @@ int Downkey(int arr[][4])
             if (j < 4)
                 break;
         }
-        if (i == 0) // shifting not possible
+        if (i == 0)
             return 0;
-        swap(&arr[i][j], &arr[i - 1][j]); // swap numbers
+        swap(&arr[i][j], &arr[i - 1][j]); 
 
-        return 1; // shift up success
+        return 1; 
 }
 
 
@@ -68,12 +68,12 @@ int Rightkey(int arr[][4])
             if (j < 4)
                 break;
         }
-        if (j == 0) // shifting not possible
+        if (j == 0) 
             return 0;
 
         swap(&arr[i][j], &arr[i][j - 1]);
 
-        return 1; // shift up success
+        return 1; 
     }
 
 
@@ -90,11 +90,11 @@ int Leftkey(int arr[][4])
                 break;
         }
 
-        if (j == 3) // shifting not possible
+        if (j == 3) 
             return 0;
 
         swap(&arr[i][j], &arr[i][j + 1]);
-        return 1; // shift up success
+        return 1; 
 }
 
 
